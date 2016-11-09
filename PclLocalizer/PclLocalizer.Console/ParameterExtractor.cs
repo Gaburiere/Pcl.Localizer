@@ -20,11 +20,15 @@ namespace PclLocalizer.Console
         public string NameSpace => this.GetValue(Constants.NamespaceParam);
         public string ClassName => this.GetValue(Constants.ClassNameParam);
 
+        public bool IsWeb => this._arguments.IndexOf(Constants.WebParam) != -1;
+
         private string GetValue(string param)
         {
             var index = this._arguments.IndexOf(param);
             return this._arguments[index + 1];
         }
+
+
         
     }
 }

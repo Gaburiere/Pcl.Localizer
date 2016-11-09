@@ -34,6 +34,8 @@ namespace PclLocalizer.Console
 
             if (!this.ClassArgumentsExist)
                 throw new ParameterMissingException("I need a destination classname! -c");
+
+            // mode parameter is not mandatory
         }
 
         /// <summary>
@@ -133,6 +135,26 @@ namespace PclLocalizer.Console
                 return true;
             }
         }
+
+        /// <summary>
+        /// Exist Arguments -mod and is passed
+        /// </summary>
+        //public bool ModeArgumentExixts
+        //{
+        //    get
+        //    {
+        //        var paramexist = this._arguments.Contains(Constants.WebParam);
+
+        //        if (!paramexist) return false;
+
+        //        var index = this._arguments.IndexOf(Constants.WebParam);
+
+        //        //TODO: check not mandatory
+        //        if (index >= this._arguments.Count - 1) return false;
+
+        //        return true;
+        //    }
+        //}
 
     }
 }
