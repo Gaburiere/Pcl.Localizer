@@ -13,6 +13,7 @@ namespace PclLocalizer.Console
         public static string SeparatorParam => "-s";
         public static string NamespaceParam => "-n";
         public static string ClassNameParam => "-c";
+        public static string WebParam => "-web";
 
         public static string NamespacePlaceHolder => "{{namespace}}";
         public static string PropertiesPlaceHolder => "{{properties}}";

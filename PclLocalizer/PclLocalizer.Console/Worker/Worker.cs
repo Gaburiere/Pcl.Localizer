@@ -45,7 +45,11 @@ namespace PclLocalizer.Console.Worker
             var separator = this._extractor.Separator;
             var nameSpace = this._extractor.NameSpace;
 
-            var magic = Resources.MagicFile;// File.ReadAllText("File/MagicFile.txt");
+            var web = this._extractor.IsWeb;
+
+            var magic = web ? Resources.MagicFileWeb : Resources.MagicFile;
+
+            //var magic = Resources.MagicFile;// File.ReadAllText("File/MagicFile.txt");
 
             //Add destination name
             magic = magic.Replace(Constants.ClassNamePlaceHolder, className);
